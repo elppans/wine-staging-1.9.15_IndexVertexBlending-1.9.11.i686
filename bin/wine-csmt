@@ -1,0 +1,14 @@
+#!/bin/bash
+
+case "$1" in
+	-on)
+	regedit gcmd/CSMTON_PSMOFF.reg
+	;;
+	-off)
+	regedit gcmd/CSMTOFF_PSMOFF.reg
+	;;
+	*)
+	echo "Invalid parameter..."
+	exit 0
+	;;
+esac
